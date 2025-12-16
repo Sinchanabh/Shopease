@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "title": "Shoes",
+    "shortDescription": "Elegant formal shoes crafted for a smart and professional appearance.",
+    "description": "Formal shoes are designed to provide a smart and professional look for office wear and formal occasions. Made from high-quality leather or synthetic materials, they offer durability and comfort. The classic design pairs well with suits and trousers, while the cushioned insole and sturdy sole ensure all-day comfort and stability.",
+    "price": 2999,
+    "images": [
+      "../src/images/shoes.jpg",
+      "../src/images/shoes2.jpg",
+      "../src/images/shoes3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Watches",
+    "shortDescription": "Stylish and reliable watches designed to enhance your look while delivering precise timekeeping for everyday use",
+    "description": "Watches are elegant timekeeping accessories that combine style, functionality, and craftsmanship. Designed for both everyday wear and special occasions, they feature precise movements, durable materials, and comfortable straps. Available in a variety of designs—from classic and formal to modern and sporty—watches not only help you stay punctual but also add a touch of sophistication to your personality. With features such as water resistance, scratch-resistant glass, and long-lasting performance, watches are a perfect blend of practicality and fashion.",
+    "price": 1999,
+    "images": [
+      "../src/images/watches.jpg",
+      "../src/images/watches2.jpg",
+      "../src/images/watches3.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "jewellery",
+    "shortDescription": "Elegant jewellery crafted to enhance your beauty with a perfect blend of style, shine, and timeless design.",
+    "description": "Jewellery is a symbol of elegance, tradition, and personal expression. Crafted with fine attention to detail, it includes a wide range of designs such as necklaces, earrings, rings, bracelets, and bangles suitable for daily wear and special occasions. Made from high-quality materials and finished with lasting shine, jewellery adds grace and sophistication to any outfit. Whether classic, modern, or traditional, each piece is designed to complement your style and make every moment special.",
+    "price":1999,
+    "images": [
+      "../src/images/jewellery.jpg",
+      "../src/images/jewellery2.jpg",
+      "../src/images/jewellery3.jpg"
+    ]
+  }, 
+  {
+    "id": 4,
+    "title": "Lipstick",
+    "shortDescription": "Richly pigmented lipstick that delivers vibrant color, smooth application, and long-lasting comfort.",
+    "description": "Lipstick is a beauty essential designed to enhance your lips with intense color and a flawless finish. Formulated for smooth and even application, it glides effortlessly while keeping lips soft and moisturized. Available in a wide range of shades and finishes—from matte and creamy to glossy—lipstick suits every skin tone, mood, and occasion. Its long-lasting formula ensures confident wear throughout the day, making it perfect for both everyday use and special events.",
+    "price": 59.99,
+    "images": [
+      "../src/images/lipstick.jpg",
+      "../src/images/lipstick2.jpg",
+      "../src/images/lipstick3.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sweater",
+    "shortDescription": "Comfortable and stylish sweater designed to keep you warm while adding a cozy, elegant touch to your outfit.",
+    "description": "This sweater is crafted for warmth, comfort, and everyday style. Made from soft, high-quality fabric, it provides a cozy feel while ensuring breathability and durability. Perfect for layering or wearing on its own, the sweater suits casual outings, office wear, and cool-weather occasions. With a modern fit and versatile design, it pairs easily with jeans, trousers, or skirts, making it a must-have wardrobe essential for chilly days.",
+    "price": 4999,
+    "images": [
+      "../src/images/sweater.jpg",
+      "../src/images/sweater2.jpg",
+      "../src/images/sweater3.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Shirts",
+    "shortDescription": "Stylish and comfortable shirts designed for a smart look and all-day wear.",
+    "description": "Shirts are versatile wardrobe essentials that combine comfort, style, and durability. Crafted from high-quality fabric, they offer a soft feel, breathable comfort, and a perfect fit. Suitable for formal, casual, and semi-formal occasions, shirts can be paired easily with jeans, trousers, or chinos. Available in a variety of colors, patterns, and designs, they enhance your appearance while providing long-lasting wear and effortless style for everyday use or special occasions.",
+    "price": 499,
+    "images": [
+      "../src/images/shirts.jpg",
+      "../src/images/shirts2.jpg",
+      "../src/images/shirts3.jpg"
+    ]
+  }
+
+]
