@@ -21,32 +21,34 @@ Make sure you have the following installed on your system:
 git clone https://github.com/Sinchanabh/Shopease.git
 ```
 
-### 2️⃣ Open the Project Folder
+# Shopease – Run Instructions
 
-```bash
+## Backend
+
 cd Shopease
-```
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+cd ..
 
-Open the folder in your code editor (VS Code recommended):
-
-```bash
-code .
-```
-
-### 4️⃣ Start the Development Server
-
-```bash
-npm start
-```
+cmd /c "cd Shopease & call backend\venv\Scripts\activate.bat & python -m uvicorn backend.main:app --reload --host localhost --port 8000"
 
 
-## 🌐 Access the Application
+Backend URL:
+http://localhost:8000
+http://localhost:8000/docs
 
-After running `npm start`, open your browser and go to:
+--------------------------------------------
 
-```
-http://localhost:3000
-```
+## Frontend
+
+cd Shopease
+npm run dev
+
+Frontend URL:
+http://localhost:5173
+
 
 ## 📌 Notes
 
