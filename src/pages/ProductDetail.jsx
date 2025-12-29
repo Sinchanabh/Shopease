@@ -6,8 +6,8 @@ import products from '../data/products.json';
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { addToCart } = useCart();
-  const { addToWishlist } = useWishlist();
+  const { addToCart, isAddingToCart } = useCart();
+  const { addToWishlist, isAddingToWishlist } = useWishlist();
   const product = products.find(p => p.id === parseInt(id));
   const [mainImage, setMainImage] = useState(0);
 
@@ -41,15 +41,17 @@ const ProductDetail = () => {
             <div className="flex space-x-4">
               <button
                 onClick={() => addToCart(product)}
-                className="bg-green-500 text-white px-6 py-3 rounded text-lg"
+                disabled={isAddingToCart}
+                className="bg-green-500 text-white px-6 py-3 rounded text-lg hover:bg-green-600 active:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Add to Cart
+                {isAddingToCart ? 'Adding...' : 'Add to Cart'}
               </button>
               <button
                 onClick={() => addToWishlist(product)}
-                className="bg-blue-500 text-white px-6 py-3 rounded text-lg"
+                disabled={isAddingToWishlist}
+                className="bg-blue-500 text-white px-6 py-3 rounded text-lg hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Add to Wishlist
+                {isAddingToWishlist ? 'Adding...' : 'Add to Wishlist'}
               </button>
             </div>
           </div>

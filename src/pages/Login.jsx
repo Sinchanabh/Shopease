@@ -8,11 +8,15 @@ const Login = () => {
   const { login } = useUser();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (email && password) {
-      login({ email });
-      navigate('/');
+      const result = await login({ email, password });
+      if (result.success) {
+        navigate('/');
+      } else {
+        alert(result.error || 'Login failed');
+      }
     } else {
       alert('Please fill all fields');
     }

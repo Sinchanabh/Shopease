@@ -3,7 +3,7 @@ import { useCart } from '../contexts/CartContext';
 import products from '../data/products.json';
 
 const Home = () => {
-  const { addToCart } = useCart();
+  const { addToCart, isAddingToCart } = useCart();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-gray-200">

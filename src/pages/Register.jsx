@@ -6,14 +6,18 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const { login } = useUser();
+  const { register } = useUser();
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (email && password && password === confirmPassword) {
-      login({ email });
-      navigate('/');
+      const result = await register({ email, password });
+      if (result.success) {
+        navigate('/');
+      } else {
+        alert(result.error || 'Registration failed');
+      }
     } else {
       alert('Please fill all fields and ensure passwords match');
     }

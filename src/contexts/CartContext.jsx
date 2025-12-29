@@ -7,12 +7,17 @@ export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
   const [cart, setCartState] = useState([]);
+  const [popupMessage, setPopupMessage] = useState('');
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isAddingToCart, setIsAddingToCart] = useState(false);
 
   useEffect(() => {
     setCartState(getCart());
   }, []);
 
-  const addToCart = (product) => {
+  const addToCart = async (product) => {
+    setIsAddingToCart(true);
+    await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate async operation
     const existingItem = cart.find(item => item.id === product.id);
     if (existingItem) {
       updateQuantity(product.id, existingItem.quantity + 1);
@@ -21,6 +26,9 @@ export const CartProvider = ({ children }) => {
       setCartState(newCart);
       setCart(newCart);
     }
+    setPopupMessage('Item added to cart successfully!');
+    setIsPopupVisible(true);
+    setIsAddingToCart(false);
   };
 
   const updateQuantity = (id, quantity) => {
@@ -41,8 +49,12 @@ export const CartProvider = ({ children }) => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
+  const closePopup = () => {
+    setIsPopupVisible(false);
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, updateQuantity, removeItem, getTotal }}>
+    <CartContext.Provider value={{ cart, addToCart, updateQuantity, removeItem, getTotal, popupMessage, isPopupVisible, closePopup, isAddingToCart }}>
       {children}
     </CartContext.Provider>
   );

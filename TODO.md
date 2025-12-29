@@ -1,12 +1,21 @@
-# TODO: Implement Wishlist Functionality
+- [x] Update CartContext.jsx: Add isAddingToCart state, make addToCart async with delay
+- [x] Update WishlistContext.jsx: Add isAddingToWishlist state, make addToWishlist async with delay
+- [x] Update ProductDetail.jsx: Add loading states and hover/active styles to buttons
+- [x] Update ProductList.jsx: Add loading states and hover/active styles to buttons
+- [x] Update Home.jsx: Add loading states and hover/active styles to buttons
+- [x] Test button interactions across all pages
 
-- [x] Update src/utils/localStorage.js: Add getWishlist and setWishlist functions
-- [x] Create src/contexts/WishlistContext.jsx: Implement WishlistProvider with addToWishlist, removeFromWishlist, and wishlist state
-- [x] Create src/pages/Wishlist.jsx: Create Wishlist page component to display wishlist items
-- [x] Update src/App.jsx: Add WishlistProvider wrapper and /wishlist route
-- [x] Update src/components/Navbar.jsx: Add Wishlist link to navigation
-
-# TODO: Add Footer to Ecommerce App
-
-- [x] Create src/components/Footer.jsx: Footer component with copyright and links
-- [x] Update src/App.jsx: Import Footer and add it below Routes
+Backend Integration Tasks:
+- [x] Set up Python environment and install dependencies (FastAPI, SQLAlchemy, etc.)
+- [x] Create backend directory structure (Shopease/backend/)
+- [x] Set up SQLite database and create tables (users, carts, wishlists)
+- [x] Implement user authentication APIs (register, login, logout with JWT)
+- [x] Implement cart APIs (fetch cart, add item, update quantity, remove item)
+- [x] Implement wishlist APIs (fetch wishlist, add item, remove item)
+- [x] Create API utility file in frontend (Shopease/src/utils/api.js)
+- [x] Update UserContext.jsx to use API for auth
+- [x] Update CartContext.jsx to use API calls
+- [x] Update WishlistContext.jsx to use API calls
+- [ ] Test backend APIs (pending)
+- [ ] Test frontend-backend integration (pending)
+- [ ] Update frontend to handle API errors and loading states (pending)
